@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  background-color: #160d18;
+  border-bottom: 4px #1ca39e solid;
+  color: #1ca39e;
+  align-items: center;
+  height: 80px;
+}
+.menu h1 {
+  margin: 10px 20px;
+}
+
+.menu nav a {
+  padding: 10px;
+  font-size: 19px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu nav a:hover {
+  background-color: #026f6e;
+  color: white;
+  border-radius: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.cards .post1,
+.post2,
+.post3 {
+  width: 350px;
+ margin: 0px auto;
+  background-color: #026f6d67;
+  height: auto;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.post1 p {
+  padding-top: 10px;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.post2 p {
+  padding-top: 10px;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.post3 p {
+  padding-top: 10px;
+  font-family: Arial;
+  font-size: 18px;
+}
+.cards .post1 h2 {
+  color: #160d18;
+  padding-bottom: 5px;
+}
+
+.cards .post2 h2 {
+  color: #160d18;
+  padding-bottom: 5px;
+}
+
+.cards .post3 h2 {
+  color: #160d18;
+  padding-bottom: 5px;
+}
+
+.cards .post1:hover {
+  background-color: #1ca39ec5;
+  color: white;
+  transform: scale(1.05);
+}
+.cards .post2:hover {
+  background-color: #1ca39ec5;
+  color: white;
+  transform: scale(1.05);
+}
+.cards .post3:hover {
+  background-color: #1ca39ec5;
+  color: white;
+  transform: scale(1.05);
+}
+
+footer{
+    text-align: center;
+}
+
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .content {
+    word-break: break-all;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .post1,
+  .post2,
+  .post3 {
+    margin: 8px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 490px) {
+  .content {
+    word-break: break-all;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .post1,
+  .post2,
+  .post3 {
+    margin: 8px;
+  }
+}
